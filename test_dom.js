@@ -1,4 +1,4 @@
-'use strict';
+/*'use strict';
 let url = 'https://jsonplaceholder.typicode.com/posts';
 
 fetch(url)
@@ -32,4 +32,4 @@ fetch(url)
       data_container.appendChild(body_div);
       container.appendChild(data_container);
     }
-  }
+  }*/
