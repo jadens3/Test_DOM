@@ -1,4 +1,3 @@
-
 <head>
   <link rel='stylesheet' href='styles.css'>
 </head>
@@ -8,4 +7,3 @@
   <ul id="data"></ul>
 </body>
 <script src="test_dom.js"></script>
-</html>
