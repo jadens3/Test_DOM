@@ -32,7 +32,7 @@ fetch('https://jsonplaceholder.typicode.com/posts')
 
       // Sets containers and classes
       data_container = document.createElement('li');
-      data_container.setAttribute('class', 'user-' + data[i].userId, 'post-' + data[i].id, 'container');
+      data_container.setAttribute('class', 'user-' + data[i].userId + 'post-' + data[i].id, 'container');
       title_div = document.createElement('div');
       title_div.className = 'title';
       body_div = document.createElement('div');
