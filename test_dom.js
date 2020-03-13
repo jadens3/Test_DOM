@@ -1,3 +1,4 @@
+// Fetches data from url
 fetch('https://jsonplaceholder.typicode.com/posts')
   .then(function (response) {
     return response.json();
@@ -10,14 +11,17 @@ fetch('https://jsonplaceholder.typicode.com/posts')
   });
 
   function display(data) {
-    var container = document.getElementById('data');
-    var user_container;
-    var data_container;
-    var title_div;
-    var body_div;
-    let prev_user = '';
+    var container = document.getElementById('data'); // Contains all data
+    var user_container; // Contains user
+    var data_container; // Contains title and body
+    var title_div; // Contains title
+    var body_div; // Contains body
+    var prev_user = ''; // Contains previous user id
+    var i;
 
-    for(let i = 0; i < data.length; i++) {
+    // Displays elements from JSON
+    for(i = 0; i < data.length; i++) {
+      // Displays changes in user id
       if(data[i].userId != prev_user) {
         user_container = document.createElement('li');
         user_container.setAttribute('class', 'user-' + data[i].userId);
@@ -26,6 +30,7 @@ fetch('https://jsonplaceholder.typicode.com/posts')
         prev_user = data[i].userId;
       }
 
+      // Sets containers and classes
       data_container = document.createElement('li');
       data_container.setAttribute('class', 'user-' + data[i].userId, 'post-' + data[i].id, 'container');
       title_div = document.createElement('div');
@@ -33,6 +38,7 @@ fetch('https://jsonplaceholder.typicode.com/posts')
       body_div = document.createElement('div');
       body_div.className = 'body';
 
+      // Sets content in containers
       title_div.innerHTML = data[i].id + '. ' + data[i].title;
       body_div.innerHTML = data[i].body;
       data_container.appendChild(title_div);
@@ -41,13 +47,15 @@ fetch('https://jsonplaceholder.typicode.com/posts')
     }
   }
 
+  // Filters data by user-# or post-#
   function filter() {
     var input, filter, ul, li, elem, i, txtValue;
-    input = document.getElementById('input');
-    filter = input.value.toUpperCase();
-    ul = document.getElementById("data");
-    li = ul.getElementsByTagName('li');
+    input = document.getElementById('input'); // Input in text box
+    filter = input.value.toUpperCase(); // Ignores casing
+    ul = document.getElementById("data"); // List container
+    li = ul.getElementsByTagName('li'); // List elements
 
+    // Goes through list changing style to only display based on filter
     for (i = 0; i < li.length; i++) {
       elem = li[i];
       txtValue = elem.className;
