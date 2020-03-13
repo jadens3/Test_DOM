@@ -48,6 +48,7 @@ fetch('https://jsonplaceholder.typicode.com/posts')
   }
 
   // Filters data by user-# or post-#
+  // Modified code from https://www.w3schools.com/howto/howto_js_filter_lists.asp
   function filter() {
     var input, filter, ul, li, elem, i, txtValue;
     input = document.getElementById('input'); // Input in text box
