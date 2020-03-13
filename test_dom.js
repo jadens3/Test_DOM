@@ -49,7 +49,7 @@ fetch('https://jsonplaceholder.typicode.com/posts')
     li = ul.getElementsByTagName('li');
 
     for (i = 0; i < li.length; i++) {
-      elem = li[i].getElementById('container');
+      elem = li[i];
       txtValue = elem.className;
 
       if (txtValue.toUpperCase().indexOf(filter) > -1) {
