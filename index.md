@@ -3,7 +3,7 @@
   <meta charset="UTF-8">
 </head>
 <body>
-  <div id='data'></div>
+  <div id='data'>Data displayed here</div>
 </body>
 <!-- polyfill -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fetch/2.0.3/fetch.min.js"></script>
