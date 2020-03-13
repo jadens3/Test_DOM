@@ -27,11 +27,3 @@
   color: black; /* Add a black text color */
   display: block; /* Make it into a block element to fill the whole list */
 }
-
-.title {
-  text-decoration: underline; /* Underline text */
-}
-
-.body {
-  font-weight: bold; /* Bold text */
-}
