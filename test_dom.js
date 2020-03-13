@@ -20,7 +20,7 @@ fetch('https://jsonplaceholder.typicode.com/posts')
       if(data[i].userId != prev_user) {
         user_container = document.createElement('div');
         user_container.innerHTML = 'User ID: ' + data[i].userId;
-        container.appendChild(inner_container);
+        container.appendChild(user_container);
       }
 
       data_container = document.createElement('div');
