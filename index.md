@@ -1,5 +1,10 @@
+
+<head>
+  <link rel='stylesheet' href='styles.css'>
+</head>
 <body>
-  <div id='data'></div>
+  <input type="text" id="input" onkeyup="filter()" placeholder="Search users \"User-#\", Posts \"Id-#\"">
+  <ul id="data"></ul>
 </body>
-<!-- Main Script -->
 <script src="test_dom.js"></script>
+</html>
