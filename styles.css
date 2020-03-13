@@ -28,10 +28,10 @@
   display: block; /* Make it into a block element to fill the whole list */
 }
 
-#title {
+.title {
   text-decoration: underline; /* Underline text */
 }
 
-#body {
+.body {
   font-weight: bold; /* Bold text */
 }
